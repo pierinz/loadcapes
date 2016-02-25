@@ -1,0 +1,9 @@
+[Unit]
+Description=Autoload capes at boot
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/loadcapes.sh
+
+[Install]
+WantedBy=multi-user.target
